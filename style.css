@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Uni Sans Heavy;
+  src: url(uni-sans/Uni\ Sans\ Heavy.otf);
+}
+  
+body {
+  font-family: Uni Sans Heavy, Arial;
+  min-height: 100vh;  
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.0)), url("images/valea-podragului2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav{
+  padding: 1.5%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  height: 12%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index:1;
+}
+.menu {
+  float: right;
+  list-style: none;
+  margin: 2vw;    
+}
+.menu li {
+  display: inline-block;
+  margin: 0.5vw;
+}
+.menu li a
+{
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5vw 1vw;
+  font-family: "Uni Sans Heavy", Arial;
+  letter-spacing: 0.2rem;
+  border-bottom: 0.1em solid #fff;
+}
+.menu li a:hover
+{
+  background: coral;
+  border-bottom: 0.1em solid coral;
+  transition: .4s;       
+}
+.menu li.active a
+{
+  border: 0.1em solid coral;
+}
+.container {
+  display: flex;
+ /* min-height: 100vh;*/
+  margin: 5rem auto;
+  padding: 2rem;
+  /*padding-top: 100px;*/
+  position: relative;
+}
+.container-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 8vw;
+} 
+.container-left .content {
+  max-width: 30vw;
+  display: grid;
+  gap: 1rem;
+  padding: 0.5rem;
+  padding-bottom: 0.7rem;
+}
+.content h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #f3f4f6;
+  font-weight: 700;
+}
+.content p {
+  color: #f3f4f6;
+  letter-spacing: 0.15rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+.btns button {
+  padding: 0.5rem 2rem;
+  color: #f3f4f6;
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #f3f4f6;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button.contact-us, button.more-info {
+  background-color: #f3f4f6;
+  color: grey;
+}
+button.contact-us:hover, button.more-info:hover {
+  background-color: #ffffff33;
+  color:#f3f4f6;
+  font-weight: bold;
+}
+button.contact-us:focus, button.more-info:focus {
+  background-color: #ffffff33;
+  color:#f3f4f6;
+  font-weight: bold;
+}
+footer{ 
+  background-color: #212329;
+  padding: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer-content{
+  width:80%;
+  min-height: 20vh;
+  background-color: #212329;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.footer-heading{
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer-heading h2{
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.footer-heading a{
+  color:#fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.footer-heading a:hover{
+  color: lightslategrey;
+  transition: 0.3s ease-out;
+}
+.footer-heading-col3{
+  margin-bottom: 2rem;
+}
+#footer-email{
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+
+}
+#footer-email::placeholder{
+  color: #b1b1b1;
+}
+
+#footer-email-button{
+  width: 100px;
+  height: 40px;  
+  background-color: coral;
+  color:#fff;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+}
+#footer-email-button:hover{
+  background-color: #ffffff33;
+  color:#fff;
+  transition:0.3s;
+}
+@media screen and (max-width:625px){
+  .logo{
+      visibility: hidden;
+      position: absolute;
+  }
+  nav{
+      padding: 1.5%;
+      position: relative;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      height: 12%; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      z-index:1;
+  }
+  .container {
+    display: flex;
+   /*min-height: 100vh;*/
+    margin: 0;
+    padding: 2rem;
+    /*padding-top: 100px;*/
+    position: relative;
+  }
+  .content h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    color: #f3f4f6;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width:450px){
+  .logo{
+      visibility: hidden;
+      position: absolute;
+  }
+  nav{
+      padding: 1.5%;
+      position: relative;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.1);
+      height: 12%; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      z-index:1;
+  }
+  .menu li{
+      display: block;
+      margin: 1rem;
+  }
+  .menu li a{
+      border: none;
+  }
+  .content h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #f3f4f6;
+    font-weight: 700;
+  }
+  .container {
+    display: flex;
+    /*min-height: 100vh;*/
+    margin: 0;
+    padding: 2rem;
+    /*padding-top: 100px;*/
+    position: relative;
+  }
+}

@@ -1,110 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Acasa</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="contact.css" rel="stylesheet" type="text/css">
 
-    </head>
-    <body>
-        <header>
-            <nav> 
-                <img src="images/logo2.png" alt="Logo" class="logo">
-                <ul class="menu">
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="contact.css" rel="stylesheet" type="text/css">
+    <script defer src="contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="images/logo2.png" alt="Logo" class="logo">
+            <ul class="menu">
                 <li><a href="index.html">Acasa</a></li>
                 <li><a href="about.html">About us</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="heading">
-            </div> 
-            <div class="container">
-                
-                    <div class="contact form">
-                        <h2>Get in touch</h2>
-                        <form>
-                            <div class="form-box">
-                                <div class="form-row">
-                                    <div class="input-box">
-                                        <span>First Name</span>
-                                        <input type="text" placeholder="Eg. Radu">
-                                    </div>
-                                    <div class="input-box">
-                                        <span>Last Name</span>
-                                        <input type="text" placeholder="Eg. Hang">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="input-box">
-                                        <span>Email</span>
-                                        <input type="email" placeholder="Eg. raduhang@email.com">
-                                    </div>
-                                </div>
-                                <div class="form-row-message">
-                                    <div class="input-box">
-                                        <span>Message</span>
-                                        <textarea placeholder="Write your message or question"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-row-message">
-                                    <div class="input-box">
-                                        <input type="submit" value="Send">
-                                    </div>
-                                </div> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="heading">
+        </div>
+        <div class="container">
+
+            <div class="contact form">
+                <h2>Get in touch</h2>
+                <div id="error"></div>
+                <form id="form">
+                    <div class="form-box">
+                        <div class="form-row">
+                            <div class="input-box">
+                                <span>First Name</span>
+                                <input id="first-name" type="text" placeholder="Eg. Radu">
+                                <div class="error" id="error-first-name"></div>
                             </div>
-                        </form>
-                    </div>
-                
-                
-                    <div class="contact info">
-                        <h3>Contact Info</h3>
-                        <div class="info-box">
-                            <div class="contact-info-row">  
-                                <span>Adress: </span>
-                               <p>Str. Samuel Von Brukenthal nr.2, Sibiu, ROMANIA</p>
+                            <div class="input-box">
+                                <span>Last Name</span>
+                                <input id="last-name" type="text" placeholder="Eg. Hang">
+                                <div class="error" id="error-last-name"></div>
                             </div>
-                            <div class="contact-info-row">
-                                <span>Email: </span>
-                               <a href="mailto:raduhang47@gmail.com">raduhang47@gmail.com</a>
+                        </div>
+                        <div class="form-row">
+                            <div class="input-box">
+                                <span>Email</span>
+                                <input id="email" type="email" placeholder="Eg. raduhang@email.com">
+                                <div class="error" id="error-email"></div>
                             </div>
-                            <div class="contact-info-row">
-                                <span>Phone:</span>
-                                <a href="tel:+4070572469">+40 0770 572 469</a>
+                        </div>
+                        <div class="form-row-message">
+                            <div class="input-box">
+                                <span>Message</span>
+                                <textarea id="message" placeholder="Write your message or question"></textarea>
+                                <div class="error" id="error-message"></div>
+                            </div>
+                        </div>
+                        <div class="form-row-message">
+                            <div class="input-box">
+                                <input type="submit" value="Send">
                             </div>
                         </div>
                     </div>
-                    <div class="contact map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d715.805735049818!2d24.151503814459584!3d45.79699294167285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c679124578d5d%3A0xdb9316640bfa70bf!2sPrim%C4%83ria%20Municipiului%20Sibiu!5e0!3m2!1sro!2sro!4v1707103640568!5m2!1sro!2sro"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                
+                </form>
             </div>
-        </main>
-        <footer>
-            <div class="footer-content">
-              <div class="footer-heading col1">
+
+
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="info-box">
+                    <div class="contact-info-row">
+                        <span>Adress: </span>
+                        <p>Str. Samuel Von Brukenthal nr.2, Sibiu, ROMANIA</p>
+                    </div>
+                    <div class="contact-info-row">
+                        <span>Email: </span>
+                        <a href="mailto:raduhang47@gmail.com">raduhang47@gmail.com</a>
+                    </div>
+                    <div class="contact-info-row">
+                        <span>Phone:</span>
+                        <a href="tel:+4070572469">+40 0770 572 469</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d715.805735049818!2d24.151503814459584!3d45.79699294167285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474c679124578d5d%3A0xdb9316640bfa70bf!2sPrim%C4%83ria%20Municipiului%20Sibiu!5e0!3m2!1sro!2sro!4v1707103640568!5m2!1sro!2sro"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-heading col1">
                 <h2>Navigate</h2>
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
                 <a href="gallery.html">Gallery</a>
-                <a href="contact.html">Contact</a> 
-              </div>
-              <div class="footer-heading col2">
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-heading col2">
                 <h2>Follow us</h2>
                 <a href="https://www.instagram.com/hangradu?igsh=emlrbjljd2pteHZq&utm_source=qr">Instagram</a>
                 <a href="https://www.facebook.com">Facebook</a>
                 <a href="https://www.youtube.com/@andreistrava1895">Youtube</a>
-              </div>
-              <div class="footer-heading col3">
+            </div>
+            <div class="footer-heading col3">
                 <h2>Join our newsletter</h2>
                 <form>
-                  <input type="email" placeholder="Enter your email" id="footer-email">
-                  <input type="submit" id="footer-email-button" value="Sign up">
+                    <input type="email" placeholder="Enter your email" id="footer-email">
+                    <input type="submit" id="footer-email-button" value="Sign up">
                 </form>
-              </div>
             </div>
-        </footer>
-    </body> 
+        </div>
+    </footer>
+</body>
+
 </html>

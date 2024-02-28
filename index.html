@@ -1,22 +1,47 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Acasa</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<html lang="en">
 
-    </head>
-    <body>
-        <nav> 
-            <img src="images/logo2.png" alt="Logo" class="logo">
-            <ul class="menu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="home.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <img src="images/logo2.png" alt="Logo" class="logo">
+        <ul class="menu">
             <li class="active"><a href="index.html">Acasa</a></li>
             <li><a href="about.html">About us</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
+            <ul data-slides>
+                <li class="slide">
+                    <img src="images/brazi.jpeg" alt="Nature Image #1">
+                </li>
+                <li class="slide">
+                    <img src="images/apus-piatra-singuratica.jpg" alt="Nature Image #2">
+                </li>
+                <li class="slide">
+                    <img src="images/hasmasu_mare.jpeg" alt="Nature Image #3">
+                </li>
+                <li class="slide" data-active>
+                    <img src="images/paltinis3.jpeg" alt="Nature Image #4">
+                </li>
+                <li class="slide">
+                    <img src="images/valea-podragului2.jpg" alt="Nature Image #5">
+                </li>
             </ul>
-        </nav>
+        </div>
         <div class="container">
             <div class="container-left">
               <div class="content">
@@ -57,4 +82,8 @@
             </div>
           </footer>
      </body> 
+</html>
+    </section>
+</body>
+
 </html>

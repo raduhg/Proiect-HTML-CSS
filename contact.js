@@ -7,6 +7,16 @@ const errorFirstName = document.getElementById('error-first-name');
 const errorLastName = document.getElementById('error-last-name');
 const errorEmail = document.getElementById('error-email');
 const errorMessage = document.getElementById('error-message');
+const submitted = document.getElementById('submitted');
+
+var numberOfSubmits = localStorage.getItem('numberOfSubmits');
+
+if (numberOfSubmits === null) {
+    numberOfSubmits = 0;
+} else {
+    numberOfSubmits = parseInt(numberOfSubmits);
+}
+submitted.innerText = [`Total submits: ${numberOfSubmits}`];
 
 form.addEventListener('submit', (e) => {
     let sem = 0;
@@ -31,8 +41,21 @@ form.addEventListener('submit', (e) => {
         sem = 1;
     }
 
-    if (sem === 1) {
-        e.preventDefault();
+    if (message.value.length > 300) {
+        errorMessage.innerText = 'Message too long. Maximum 300 characters.';
+        sem = 1;
     }
 
+    if (sem === 1) {
+        e.preventDefault();
+    } else {
+        numberOfSubmits++;
+        localStorage.setItem('numberOfSubmits', numberOfSubmits);
+
+        const formInfo = new FormData(form);
+        const formObj = Object.fromEntries(formInfo);
+        
+        const formjson = JSON.stringify(formObj);   
+        localStorage.setItem(`form ${numberOfSubmits}`, formjson);
+    }
 })

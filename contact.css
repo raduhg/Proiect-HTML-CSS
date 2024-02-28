@@ -230,12 +230,22 @@ main .heading h1 {
   cursor: pointer;
   padding: 14px 15px;
 }
-.error{
+
+.error {
   color: red;
 }
 
-.info-box span {
+/*Number of submits*/
+.no-submit {
+  float: right;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+/*Contact styling*/
+.info-box span {
+
   font-size: 1.2rem;
   color: #fff;
 }
@@ -251,6 +261,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Map styling*/
 .map {
   padding: 0;
 }

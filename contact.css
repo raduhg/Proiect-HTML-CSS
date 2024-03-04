@@ -12,7 +12,7 @@
 body {
   font-family: Uni Sans Heavy, Arial;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(images/piatra_singuratica.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(images/piatra_singuratica.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -230,12 +230,22 @@ main .heading h1 {
   cursor: pointer;
   padding: 14px 15px;
 }
-.error{
+
+.error {
   color: red;
 }
 
-.info-box span {
+/*Number of submits*/
+.no-submit {
+  float: right;
+  color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+/*Contact styling*/
+.info-box span {
+
   font-size: 1.2rem;
   color: #fff;
 }
@@ -251,6 +261,7 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Map styling*/
 .map {
   padding: 0;
 }

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Photo Gallery</title>
+        <title>Weather</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="gallery.css" rel="stylesheet" type="text/css">
-
+        <link href="weather.css" rel="stylesheet" type="text/css">
+        <script src="weather.js" defer></script>
     </head>
     <body>
         <header>
@@ -13,14 +13,32 @@
                 <ul class="menu">
                 <li><a href="index.html">Acasa</a></li>
                 <li><a href="about.html">About us</a></li>
-                <li class="active"><a href="#">Gallery</a></li>
-                <li><a href="weather.html">Weather</a></li>
+                <!-- <li><a href="gallery.html">Gallery</a></li> -->
+                <li class="active"><a href="weather.html">Weather</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1>Coming soon...</h1>
+          <div class="text-container">
+            <h1>Check the weather</h1>
+            <p>For accurate results get the coordinates from the google map and insert them into the input fields.</p>
+          </div>
+          <div class="container">
+            <div class="content-left">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d100090.30621797458!2d24.650585729073594!3d45.59931748936064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sro!2sro!4v1709537984317!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="content-right">
+              <h2>Enter your coordinates</h2>
+                <form id="weather-form">
+                  <input type="text" class="coord-input" id="lat-input" placeholder="Latitude">
+                  <input type="text" class="coord-input" id="long-input" placeholder="Longitude">
+                  <button type="submit">Get weather</button>
+                </form>
+                <div class="card" style="display: none;" > 
+                </div>
+            </div>   
+        </div>
         </main>
         <footer>
             <div class="footer-content">

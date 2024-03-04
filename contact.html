@@ -15,8 +15,10 @@
             <ul class="menu">
                 <li><a href="index.html">Acasa</a></li>
                 <li><a href="about.html">About us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <!-- <li><a href="gallery.html">Gallery</a></li> -->
+                <li><a href="weather.html">Weather</a></li>
                 <li class="active"><a href="contact.html">Contact</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -33,26 +35,26 @@
                         <div class="form-row">
                             <div class="input-box">
                                 <span>First Name</span>
-                                <input id="first-name" type="text" placeholder="Eg. Radu">
+                                <input id="first-name" type="text" name="First name" placeholder="Eg. Radu">
                                 <div class="error" id="error-first-name"></div>
                             </div>
                             <div class="input-box">
                                 <span>Last Name</span>
-                                <input id="last-name" type="text" placeholder="Eg. Hang">
+                                <input id="last-name" type="text" name="Last name" placeholder="Eg. Hang">
                                 <div class="error" id="error-last-name"></div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="input-box">
                                 <span>Email</span>
-                                <input id="email" type="email" placeholder="Eg. raduhang@email.com">
+                                <input id="email" type="email" name="Email" placeholder="Eg. raduhang@email.com">
                                 <div class="error" id="error-email"></div>
                             </div>
                         </div>
                         <div class="form-row-message">
                             <div class="input-box">
                                 <span>Message</span>
-                                <textarea id="message" placeholder="Write your message or question"></textarea>
+                                <textarea id="message" name="Message" placeholder="Write your message or question"></textarea>
                                 <div class="error" id="error-message"></div>
                             </div>
                         </div>
@@ -62,6 +64,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="no-submit" id="submitted"></div>
                 </form>
             </div>
 
@@ -79,7 +82,7 @@
                     </div>
                     <div class="contact-info-row">
                         <span>Phone:</span>
-                        <a href="tel:+4070572469">+40 0770 572 469</a>
+                        <a href="tel:+40770572469">+40 0770 572 469</a>
                     </div>
                 </div>
             </div>

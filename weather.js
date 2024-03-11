@@ -58,14 +58,14 @@ function displayWeatherInfo(data) {
     tempDisplay.textContent = `${(temp - 273.15).toFixed(1)}°C`;
     feelsLikeDisplay.textContent = `feels like: ${(feels_like - 273.15).toFixed(1)}°C`;
     descriptionDisplay.textContent = description;
-    if (deg <= 22, 5 || deg > 337.5) { windDisplay.textContent = `${speed}m/s N` };
-    if (deg >= 22.5 && deg < 67.5) { windDisplay.textContent = `${speed}m/s NE` };
-    if (deg >= 67.5 && deg < 112.5) { windDisplay.textContent = `${speed}m/s E` };
-    if (deg >= 112.5 && deg < 157.5) { windDisplay.textContent = `${speed}m/s SE` };
-    if (deg >= 157.5 && deg < 202.5) { windDisplay.textContent = `${speed}m/s S` };
-    if (deg >= 202.5 && deg < 247.5) { windDisplay.textContent = `${speed}m/s SV` };
-    if (deg >= 247.5 && deg < 292.5) { windDisplay.textContent = `${speed}m/s V` };
-    if (deg >= 292.5 && deg < 337.5) { windDisplay.textContent = `${speed}m/s NV` };
+    if (deg <= 22, 5 || deg > 337.5) { windDisplay.textContent = `wind: ${speed}m/s N` };
+    if (deg >= 22.5 && deg < 67.5) { windDisplay.textContent = `wind: ${speed}m/s NE` };
+    if (deg >= 67.5 && deg < 112.5) { windDisplay.textContent = `wind: ${speed}m/s E` };
+    if (deg >= 112.5 && deg < 157.5) { windDisplay.textContent = `wind: ${speed}m/s SE` };
+    if (deg >= 157.5 && deg < 202.5) { windDisplay.textContent = `wind: ${speed}m/s S` };
+    if (deg >= 202.5 && deg < 247.5) { windDisplay.textContent = `wind: ${speed}m/s SV` };
+    if (deg >= 247.5 && deg < 292.5) { windDisplay.textContent = `wind: ${speed}m/s V` };
+    if (deg >= 292.5 && deg < 337.5) { windDisplay.textContent = `wind: ${speed}m/s NV` };
     visibilityDisplay.textContent = `visibility: ${visibility}m`;
     emojiDisplay.textContent = getWeatherEmoji(id);
 
